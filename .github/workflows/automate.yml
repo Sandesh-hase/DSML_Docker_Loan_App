@@ -59,7 +59,7 @@ jobs:
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
           task-definition: loan_app_task.json
-          container-name: loan_app_container
+          container-name: loan_container
           image: ${{ steps.build-image.outputs.image }}
 
       - name: Deploy Amazon ECS task definition
