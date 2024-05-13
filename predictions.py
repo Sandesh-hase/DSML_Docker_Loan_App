@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, Scaler V4 !</p>"
+    return "<p>Hello, Scaler V5 !</p>"
 
 
 @app.route("/ping")
