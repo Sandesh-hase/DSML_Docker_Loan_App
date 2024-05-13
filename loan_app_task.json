@@ -1,13 +1,13 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:504347070466:task-definition/loan_app_task:2",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:339712839765:task-definition/loan_app_task:2",
     "containerDefinitions": [
         {
-            "name": "loan_app_container",
-            "image": "504347070466.dkr.ecr.us-east-1.amazonaws.com/loan_flask_app:latest",
+            "name": "loan_container",
+            "image": "339712839765.dkr.ecr.us-east-1.amazonaws.com/loan_flask_app:latest",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "loan_app_container-80-tcp",
+                    "name": "loan_container-80-tcp",
                     "containerPort": 80,
                     "hostPort": 80,
                     "protocol": "tcp",
@@ -34,7 +34,7 @@
         }
     ],
     "family": "loan_app_task",
-    "executionRoleArn": "arn:aws:iam::504347070466:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::339712839765:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "revision": 2,
     "volumes": [],
@@ -79,7 +79,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-05-13T16:00:47.570Z",
-    "registeredBy": "arn:aws:sts::504347070466:federated-user/suraaj@scaler.com",
+    "registeredAt": "2024-05-13T17:29:23.020Z",
+    "registeredBy": "arn:aws:sts::339712839765:federated-user/scalerb8awsapruser22",
     "tags": []
 }
